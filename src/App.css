@@ -1,38 +1,76 @@
-.App {
+body{
+  font-family: 'Oswald', sans-serif;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  position: relative;
   min-height: 100vh;
+  padding-bottom: 30px;
+
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+}
+.contenedorDivsInicio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.div1inicio{
+  width: 25rem;
+  height: 20rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.502),rgba(0, 0, 0, 0.626)),url('https://www.cronista.com/files/image/466/466537/62b4a7ab17034.jpg');
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  margin: 10px;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.btnDiv1inicio{
+  background-color: transparent;
   color: white;
+  border: none;
 }
-
-.App-link {
-  color: #61dafb;
+.divMarcas{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.div1servicios{
+  padding-top:1rem ;
+  padding-bottom:1rem ;
+  background-color: rgba(0, 0, 0, 0.037);
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.imgWpp{
+  position: fixed;
+  width: 60px;
+  right: 20px;
+  bottom: 50px;
+  cursor: pointer;
+}
+.divModal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media(max-width:991px){
+  .div1inicio{
+    width: 25rem;
+    height: 15rem;
   }
 }
